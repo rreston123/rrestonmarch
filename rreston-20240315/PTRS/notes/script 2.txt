@@ -1,0 +1,81 @@
+SELECT
+    *
+FROM
+    work_order_service_contract a
+WHERE
+        plant = '03'
+    AND NOT EXISTS (
+        SELECT
+            1
+        FROM
+            billing_tags b
+        WHERE
+                b.plant = a.plant
+            AND 'W' || b.wo_number = a.wo_number
+            AND b.wo_taskno = a.wo_taskno
+    )
+    AND a.expense_code IS NOT NULL
+ORDER BY
+    transaction_date DESC;
+
+--3003.1221.00.00000.0000.000.0000.AOD
+--3013.20101.9062251.0001.0000000.460023.00000.00000.0000.0000.0000
+
+select * from wam_wo_task  where wam_wo_no = 'W145406'  --DMBLC
+
+select * from operation_lib where  o
+
+select * from gang_lib_wam where code = 'DMBLC';
+
+select * from gang_groups_lib where code = 43
+
+select * from  wo_activities where wo_number = '145406' and plant = '03' and wo_taskno = '01'
+   if qa_amount is 0 meaning wla pa ma qa
+   
+   process
+      1. contractor  input labor entry
+          Home›Gang/Crew Workbench›Labor Activity Entry
+      2. operation validates ang data sa labor charging sa gl combination
+         Home›Operations Workbench›Charging - Operation Entry
+      3. qa input ug labor entry (qa amount naa nay value)
+          Home›QA Workbench›Labor Activity Entry
+      4 . ka bill tagging na si qa
+      5. if bill tag na sa qa e.request na ni contractor ang ge.bill tag ni QA
+             Home›Gang/Crew Workbench›Billing Request
+      6. approved sa 1st level sa approver
+            Home›Pre-Approve Billing Request
+      7  approved sa 2nd level sa approver
+           Home›Verify Billing Request
+      8  final approver
+          Home›Approve Billing Request
+      9. contractor e.input ang invoice number sa SAR
+          - submit contractor to OU ang SAR
+           Home›Gang/Crew Workbench›SAR Report
+        9.1 input invoice number
+        9.2 e.generate SAR pdf
+        9.3 save generated SAR pdf to local drive
+        9.4 upload SAR pdf to SAR # 
+        9.5 submit to OU ang SAR
+      10 . validate ni OU if tama ang SAR then submit to fusion
+      
+      
+      
+select *  from work_order_service_contract where wo_number = 'W096978' and wo_taskno = '02' and work_order_service_contract_id = 1884;
+
+
+BEGIN
+    SELECT
+        ( substr(account_no, 1, 5)
+          || expense_code
+          || substr(account_no, 5) )
+    INTO :p87_gl_combination
+    FROM
+        work_order_service_contract
+    WHERE
+            wo_number = :p87_wosearch
+        AND wo_taskno = :p87_wotaskno;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        :p87_gl_combination := '';
+END;

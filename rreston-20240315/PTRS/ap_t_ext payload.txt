@@ -1,0 +1,18 @@
+{
+	
+	"preparer": "ACarcallas",
+	"transactiontype" : "Customer Refund",
+	"currency": "PHP",
+	"invoicenumber": "123456789",
+	"invamount": "4000",
+	"invoicedate": "2023-09-05",
+	"invoicetype": "Standard",
+	"paymentterm": "NET 7",
+	"suppliername": "CERELI ELECTRICAL SERVICES",
+	"supplierid": "300000008502344",
+	"orgid": "300000003926505",
+	"suppliersiteid": "300000012271409",
+	"suppliersitename": "CEBU",
+	"headerdescription": "Testing 3"
+	
+}

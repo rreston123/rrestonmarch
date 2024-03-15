@@ -1,0 +1,28 @@
+
+
+1. identify the tables and columns for insert data 
+   --extract data for this tables wfinstrumenttable and ap_t_ext
+   --pag generate palng ni clicking RFP on the app
+
+  1.wfinstrumenttable - check 
+    - check ang columns nga naay value
+    --processinstanceid = AP-0000378478 <--sample data only
+    
+  2. table --ap_t_ext where TRANSCTIONID = 'AP-0000378478'
+    
+  3. copy paste the id then + 1
+      manual insert data for two tables wfinstrumenttable and ap_t_ext
+
+
+1st table ra ang insertion --1.wfinstrumenttable -d done
+
+--check asa na columns ang lines items
+   
+
+check sa 3 ka tables if makita ang approval details
+
+
+
+
+
+

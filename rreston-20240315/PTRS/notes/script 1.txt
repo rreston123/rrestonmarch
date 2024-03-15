@@ -1,0 +1,23 @@
+DECLARE
+    l_status VARCHAR2(100);
+    l_msg    VARCHAR2(500);
+BEGIN
+    fusion_pkg.is_coa_valid(p_gl_combination =>'3019.2021101011.20101.9062121.0001.0000000.460048.00000.00000.0000.0000.0000', p_status =>
+    l_status);
+   -- 3019.2021101011.20101.9062121.0001.0000000.460048.00000.00000.0000.0000.0000
+    /*IF l_status = 'INVALID' THEN
+  --  apex_application.g_print_success_message := '<SPAN STYLE="COLOR:RED">GL Combination is 
+           --  INVALID please correct it on WAM. or Contact BPA for assistance.</SPAN>';
+        l_msg := 'GL Combination is  INVALID please correct it on WAM. or Contact BPA for assistance.';
+    ELSIF l_status = 'ERROR' THEN
+  --  apex_application.g_print_success_message := '<SPAN STYLE="COLOR:RED">Please contact IT for 
+                                      --                  assistance.</SPAN>';
+        l_msg := 'Please contact IT for assistance.';
+    ELSIF l_status = 'VALID' THEN
+ apex_application.g_print_success_message := '<SPAN STYLE="COLOR:GREEN">GL Combination is VALID. 
+                                                 </SPAN>';
+       --l_msg := 'GL Combination is VALID.';
+    END IF;*/
+
+    dbms_output.put_line(l_status);
+END;

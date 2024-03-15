@@ -1,0 +1,42 @@
+1.SAR attachment - for R&D (Phase 2 or additional CR)
+   - development team
+2.workflow - but mostly more on the accounting payables team related concerns
+   1. Propose to add new transaction type for cbs - creation of workflow PTRS Set-up 
+      - Kathy, Michelle, Jonalyn
+   2. Who will attach the invoice? ICS?
+      - Operation related process - DU ops
+   3. GL Team to confirm the Entries in FUSION
+      - Operation / FA  Maureen Literal
+3.ptr-fusion - flexfields  containing the workorder # and taskno# - for development
+             - bryan baure
+             - Development team *
+4.ptr-fusion  - workorder line description to be transferred
+  - Kathy Lorraine Rebutazo
+  -
+
+notes 01/09/2024 2pm-3pm with sir bryan baure
+
+R&D- soap OIC
+    
+
+ptrs-fusion (#3)
+
+  2 activities
+   -1 oic to fusion
+      add dff
+
+   -2 ptrs-oic
+
+     pag create sa payload ug labay sa payload sa ptrs
+        - new gen 3rd party
+    
+  --FIN_312_INVOICEPOSTING 
+
+  -- add fields for ptrs-fusion integration
+    -- dff
+    --WO
+    --taskno
+    --flexfield
+
+
+

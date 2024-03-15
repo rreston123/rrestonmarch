@@ -1,0 +1,5 @@
+-->2 ka endpoints dapat
+
+--> sky blue means mao ni dapat ang naa sa payload
+--> uncheck ang mga column na wla sa payload 2 DB's
+--> 

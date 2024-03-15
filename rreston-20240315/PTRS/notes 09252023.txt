@@ -1,0 +1,11 @@
+finloa_approval_matrix -- approval - common type -transaction type
+ap_m_processtype
+ap_m_employee_hierarchy
+
+finloa --- accountant --if dili sa accountant mo route sa - to document verifier
+
+finloa -- document verifier -- accountant 
+
+accountant - workflow
+accountant
+accountant supervisor after ani mo interface na sa fusion

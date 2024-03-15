@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.7
+Created-By: 1.8.0_161-b12 (Oracle Corporation)
+Class-Path: lib/CopyLibs lib/ISPack.jar lib/Posting.jar lib/access-bri
+ dge-64.jar lib/cldrdata.jar lib/common-lang3.jar lib/commons-io-2.0.1
+ .jar lib/commons-lang-2.6.jar lib/dbStub.jar lib/dmsapi.jar lib/dnsns
+ .jar lib/ejbclient.jar lib/jaccess.jar lib/java-json.jar lib/jboss-cl
+ ient.jar lib/jdts.jar lib/jfxrt.jar lib/json-simple-1.1.1.jar lib/jso
+ n.jar lib/localedata.jar lib/log4j-1.2.14.jar lib/log4j-1.2.17.jar li
+ b/nashorn.jar lib/ngejbcallbroker.jar lib/nglogger.jar lib/ngutility.
+ jar lib/omnishared.jar lib/org-apache-commons-lang.jar lib/org-netbea
+ ns-modules-java-j2seproject-copylibstask.jar lib/stubswfscustom.jar l
+ ib/stubwfs.jar lib/sunec.jar lib/sunjce_provider.jar lib/sunmscapi.ja
+ r lib/sunpkcs11.jar lib/wfcustom_ejb.jar lib/wfdesktop.jar lib/wfscli
+ ent.jar lib/wfsshared.jar lib/wrapper.jar lib/xom-1.2.6.jar lib/zipfs
+ .jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: com.newgen.posting.Posting
+

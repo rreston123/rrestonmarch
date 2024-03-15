@@ -1,0 +1,9 @@
+tan.awa if katong g.add nga field is makita sa fusion
+
+if naay dff header dff na sya
+
+check ang lines nga header pra makita ang ge.add nga lines
+
+echeck sa lines nga details if makita ang ge.add ug sa dfflines
+
+e.try ug add sa lines
